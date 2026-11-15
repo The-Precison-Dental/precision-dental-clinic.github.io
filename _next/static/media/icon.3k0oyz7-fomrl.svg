@@ -1,0 +1,28 @@
+<!--
+  Favicon / PWA / schema.org logo. The same molar as <LogoMark>, on the same
+  navy-to-blue disc. At 16px the segmented ring, the needles and the graduations
+  all collapse into grey mud, so they are reduced to four solid satellites:
+  enough to keep the compass reading, coarse enough to survive.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="d" x1="50" y1="0" x2="50" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E2A63"/>
+      <stop offset="1" stop-color="#27578F"/>
+    </linearGradient>
+    <linearGradient id="t" x1="34" y1="24" x2="68" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DFE7F3"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="50" fill="url(#d)"/>
+  <g fill="#fff">
+    <circle cx="50" cy="12.5" r="3.6"/>
+    <circle cx="87.5" cy="50" r="3.6"/>
+    <circle cx="50" cy="87.5" r="3.6"/>
+    <circle cx="12.5" cy="50" r="3.6"/>
+  </g>
+  <g transform="translate(50 50) scale(.88) translate(-50 -51.75)">
+    <path fill="url(#t)" d="M50 27C47 23.5 43.5 22 40 22C34.5 22 29 25 29 35C29 46 33.2 52.5 34 58C34.7 64 35.6 70 36.3 76C37 80.5 38.2 81.5 39.8 81.5C42 81.5 45.4 79.5 46.3 75C47 70 47.6 58.5 50 58.5C52.4 58.5 53 70 53.7 75C54.6 79.5 58 81.5 60.2 81.5C61.8 81.5 63 80.5 63.7 76C64.4 70 65.3 64 66 58C66.8 52.5 71 46 71 35C71 25 65.5 22 60 22C56.5 22 53 23.5 50 27Z"/>
+  </g>
+</svg>

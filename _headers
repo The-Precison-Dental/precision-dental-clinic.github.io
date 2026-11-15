@@ -1,0 +1,15 @@
+# Cloudflare Pages response headers (https://developers.cloudflare.com/pages/configuration/headers/)
+
+# Share-card images are written without a file extension by the static
+# export, so tell browsers and link-preview bots (WhatsApp, Facebook, X)
+# that they are PNGs.
+/opengraph-image
+  Content-Type: image/png
+/services/*/opengraph-image-*
+  Content-Type: image/png
+
+# Photos and build assets never change under the same name: cache them long.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/images/*
+  Cache-Control: public, max-age=604800

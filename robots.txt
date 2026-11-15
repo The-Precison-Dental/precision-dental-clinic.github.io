@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /hero-lab
+
+Sitemap: https://pdcsmiledentist.com/sitemap.xml
